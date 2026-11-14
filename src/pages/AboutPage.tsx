@@ -6,7 +6,14 @@ import { PlaceholderNotice } from '@/components/ui/PlaceholderNotice';
 import { MILESTONES, VALUES } from '@/data/company';
 import { useDocumentMeta } from '@/lib/useDocumentMeta';
 
-const LEADERS = ['Sanjeev Kumar', 'Vineet Gupta', 'Ashu Gupta', 'Lalit Bansal'];
+type Leader = { name: string; photo?: string };
+
+const LEADERS: Leader[] = [
+  { name: 'Sanjeev Kumar' },
+  { name: 'Vineet Gupta' },
+  { name: 'Ashu Gupta' },
+  { name: 'Lalit Bansal' },
+];
 const BROCHURE_URL = 'https://sbfrapid.com/wp-content/uploads/2022/07/corporate-brochure.pdf';
 
 export function AboutPage() {
@@ -85,11 +92,15 @@ export function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
           <SectionHeading eyebrow="Leadership" title={<span className="text-white">Our directors</span>} />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {LEADERS.map((name) => (
+            {LEADERS.map(({ name, photo }) => (
               <article key={name} className="rounded-2xl border border-navy-800 bg-navy-900 p-6">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-navy-700 text-2xl font-bold text-white">
-                  {name.split(' ').map((part) => part[0]).join('')}
-                </div>
+                {photo ? (
+                  <img src={photo} alt={name} loading="lazy" className="h-20 w-20 rounded-full object-cover" />
+                ) : (
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-navy-700 text-2xl font-bold text-white">
+                    {name.split(' ').map((part) => part[0]).join('')}
+                  </div>
+                )}
                 <h3 className="mt-5 text-lg font-bold">{name}</h3>
                 <p className="mt-1 text-sm text-navy-300">Title and biography to be confirmed</p>
               </article>
