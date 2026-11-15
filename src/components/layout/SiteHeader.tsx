@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Menu, Phone, Mail } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Menu, Phone } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { COMPANY, NAV_LINKS } from '@/data/company';
 import { Logo } from '@/components/ui/Logo';
@@ -8,7 +8,7 @@ import { MobileMenu } from '@/components/layout/MobileMenu';
 import { NavDropdown } from '@/components/layout/NavDropdown';
 
 function navItemClass({ isActive }: { isActive: boolean }) {
-  return `rounded-full px-3 py-2 text-sm font-semibold transition hover:text-red-600 ${
+  return `nav-link-underline rounded-full px-3 py-2 text-sm font-semibold transition-colors duration-300 hover:text-red-600 ${
     isActive ? 'text-red-600' : 'text-navy-900'
   }`;
 }
@@ -71,11 +71,13 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ButtonLink to="/find-dealers" className="hidden px-5 py-2.5 xl:inline-flex">
+          <ButtonLink to="/find-dealers" variant="outline" className="hidden px-5 py-2.5 xl:inline-flex">
+            <MapPin className="h-4 w-4" aria-hidden="true" />
             Find Dealers
           </ButtonLink>
-          <ButtonLink to="/contact-us" variant="outline" className="hidden px-5 py-2.5 lg:inline-flex">
+          <ButtonLink to="/contact-us" className="hidden px-5 py-2.5 lg:inline-flex">
             Get a Quote
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </ButtonLink>
           <button
             type="button"

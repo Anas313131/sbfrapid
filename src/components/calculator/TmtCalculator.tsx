@@ -1,7 +1,8 @@
-import { useMemo, useState, type ChangeEvent } from 'react';
-import { Calculator, Info } from 'lucide-react';
+import { useMemo, useState, type ChangeEvent, type ComponentProps } from 'react';
+import { Calculator, CircleDot, IndianRupee, Info, Layers, Ruler, Scale, Wallet } from 'lucide-react';
 import { calculateTmtEstimate } from '@/lib/calculator';
 import { Field, inputClass } from '@/components/ui/FormField';
+import type { LucideIcon } from 'lucide-react';
 
 const MIN_DIAMETER_MM = 8;
 const MAX_DIAMETER_MM = 40;
@@ -44,6 +45,31 @@ function validate(values: Values) {
 const numberFormat = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 });
 const currencyFormat = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 });
 
+type IconInputProps = ComponentProps<'input'> & { icon: LucideIcon };
+
+function IconInput({ icon: Icon, ...inputProps }: IconInputProps) {
+  return (
+    <div className="relative">
+      <Icon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden="true" />
+      <input {...inputProps} className={`${inputClass} pl-11`} />
+    </div>
+  );
+}
+
+type ResultTileProps = { icon: LucideIcon; label: string; value: string; accent?: boolean };
+
+function ResultTile({ icon: Icon, label, value, accent = false }: ResultTileProps) {
+  return (
+    <div className="rounded-2xl bg-white p-4 shadow-card">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+        <Icon className={`h-4 w-4 ${accent ? 'text-red-600' : 'text-navy-700'}`} aria-hidden="true" />
+        {label}
+      </div>
+      <p className={`mt-2 text-2xl font-bold tabular-nums ${accent ? 'text-red-600' : 'text-navy-900'}`}>{value}</p>
+    </div>
+  );
+}
+
 export function TmtCalculator() {
   const [values, setValues] = useState<Values>(INITIAL_VALUES);
   const [touched, setTouched] = useState(false);
@@ -63,21 +89,24 @@ export function TmtCalculator() {
     setValues((current) => ({ ...current, [field]: event.target.value }));
   };
 
+  const resultKey = `${values.diameter}|${values.length}|${values.quantity}|${values.rate}`;
+
   return (
-    <div className="space-y-5">
-      <div className="flex items-start gap-3">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-white">
+    <div className="space-y-6">
+      <div className="flex items-start gap-4">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-navy-900 text-white shadow-card">
           <Calculator className="h-5 w-5" aria-hidden="true" />
         </span>
         <div>
           <h3 className="text-lg font-bold text-navy-900">TMT Weight Calculator</h3>
-          <p className="text-sm text-slate-600">Estimate bar weight from diameter, length and quantity.</p>
+          <p className="text-sm leading-[1.5] text-slate-600">Estimate bar weight from diameter, length and quantity.</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Field id="calc-diameter" label="Bar diameter (mm)" required error={touched ? checked.errors.diameter : undefined}>
-          <input
+          <IconInput
+            icon={CircleDot}
             id="calc-diameter"
             type="number"
             inputMode="decimal"
@@ -88,11 +117,11 @@ export function TmtCalculator() {
             onChange={update('diameter')}
             onBlur={() => setTouched(true)}
             aria-invalid={touched && !!checked.errors.diameter}
-            className={inputClass}
           />
         </Field>
         <Field id="calc-length" label="Length per bar (m)" required error={touched ? checked.errors.length : undefined}>
-          <input
+          <IconInput
+            icon={Ruler}
             id="calc-length"
             type="number"
             inputMode="decimal"
@@ -102,11 +131,11 @@ export function TmtCalculator() {
             onChange={update('length')}
             onBlur={() => setTouched(true)}
             aria-invalid={touched && !!checked.errors.length}
-            className={inputClass}
           />
         </Field>
         <Field id="calc-quantity" label="Number of bars" required error={touched ? checked.errors.quantity : undefined}>
-          <input
+          <IconInput
+            icon={Layers}
             id="calc-quantity"
             type="number"
             inputMode="numeric"
@@ -116,11 +145,11 @@ export function TmtCalculator() {
             onChange={update('quantity')}
             onBlur={() => setTouched(true)}
             aria-invalid={touched && !!checked.errors.quantity}
-            className={inputClass}
           />
         </Field>
         <Field id="calc-rate" label="Rate per kg (₹)" error={touched ? checked.errors.rate : undefined}>
-          <input
+          <IconInput
+            icon={IndianRupee}
             id="calc-rate"
             type="number"
             inputMode="decimal"
@@ -131,29 +160,21 @@ export function TmtCalculator() {
             onChange={update('rate')}
             onBlur={() => setTouched(true)}
             aria-invalid={touched && !!checked.errors.rate}
-            className={inputClass}
           />
         </Field>
       </div>
 
       <div className="rounded-2xl bg-sky-100 p-5" aria-live="polite">
         {result ? (
-          <dl className="grid grid-cols-2 gap-4">
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Total length</dt>
-              <dd className="mt-1 text-xl font-bold text-navy-900">{numberFormat.format(result.totalLengthM)} m</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Estimated weight</dt>
-              <dd className="mt-1 text-xl font-bold text-navy-900">{numberFormat.format(result.totalWeightKg)} kg</dd>
-            </div>
+          <div key={resultKey} className="result-pop grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <ResultTile icon={Ruler} label="Total length" value={`${numberFormat.format(result.totalLengthM)} m`} />
+            <ResultTile icon={Scale} label="Estimated weight" value={`${numberFormat.format(result.totalWeightKg)} kg`} accent />
             {result.totalCost !== undefined && (
-              <div className="col-span-2">
-                <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">Estimated material cost</dt>
-                <dd className="mt-1 text-xl font-bold text-red-600">{currencyFormat.format(result.totalCost)}</dd>
+              <div className="sm:col-span-2">
+                <ResultTile icon={Wallet} label="Estimated material cost" value={currencyFormat.format(result.totalCost)} />
               </div>
             )}
-          </dl>
+          </div>
         ) : (
           <p className="text-sm text-slate-600">Fix the highlighted fields to see your estimate.</p>
         )}

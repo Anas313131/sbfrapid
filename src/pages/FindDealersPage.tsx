@@ -19,9 +19,12 @@ export function FindDealersPage() {
         breadcrumb="Find Dealers"
       />
 
-      <section className="py-16">
+      <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <DealerLocator initialPin={PIN_PATTERN.test(pinParam) ? pinParam : undefined} />
+          <DealerLocator
+            initialPin={PIN_PATTERN.test(pinParam) ? pinParam : undefined}
+            autoLocate={searchParams.get('locate') === '1'}
+          />
         </div>
       </section>
     </>

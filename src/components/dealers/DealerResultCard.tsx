@@ -23,7 +23,7 @@ export function DealerResultCard({ result, rank, origin, onViewOnMap }: DealerRe
 
   return (
     <article
-      className={`flex flex-col gap-5 rounded-2xl p-6 transition duration-300 hover:-translate-y-0.5 ${
+      className={`flex flex-col gap-5 rounded-2xl p-6 card-lift ${
         featured
           ? 'bg-navy-900 text-white shadow-lift ring-2 ring-red-600'
           : 'border border-slate-200 bg-white text-navy-900 shadow-card hover:shadow-lift'

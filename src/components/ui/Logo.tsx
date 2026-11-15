@@ -11,7 +11,7 @@ export function Logo({ variant = 'dark' }: LogoProps) {
       alt="SBF RAPID TMT, Strong. Build. Forever. with GreenPro certification"
       width={1320}
       height={420}
-      className="h-11 w-auto sm:h-12"
+      className="h-12 w-auto sm:h-14"
     />
   );
 

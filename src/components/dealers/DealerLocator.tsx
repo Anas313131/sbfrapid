@@ -1,5 +1,5 @@
 import { useEffect, type FormEvent } from 'react';
-import { Crosshair, MapPin, Phone } from 'lucide-react';
+import { Crosshair, MapPin, Phone, Search } from 'lucide-react';
 import { DealerMap } from '@/components/dealers/DealerMap';
 import { DealerResultCard } from '@/components/dealers/DealerResultCard';
 import { useDealerSearch } from '@/components/dealers/useDealerSearch';
@@ -10,6 +10,7 @@ import { formatDistance, formatDuration } from '@/lib/drivingRoutes';
 
 type DealerLocatorProps = {
   initialPin?: string;
+  autoLocate?: boolean;
 };
 
 function routeNotice(status: 'idle' | 'loading' | 'ready' | 'error') {
@@ -18,7 +19,7 @@ function routeNotice(status: 'idle' | 'loading' | 'ready' | 'error') {
   return null;
 }
 
-export function DealerLocator({ initialPin }: DealerLocatorProps) {
+export function DealerLocator({ initialPin, autoLocate = false }: DealerLocatorProps) {
   const {
     pinInput,
     setPinInput,
@@ -36,6 +37,10 @@ export function DealerLocator({ initialPin }: DealerLocatorProps) {
     void searchByPin(initialPin);
   }, [initialPin, setPinInput, searchByPin]);
 
+  useEffect(() => {
+    if (autoLocate) searchByCurrentLocation();
+  }, [autoLocate, searchByCurrentLocation]);
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     void searchByPin(pinInput);
@@ -47,10 +52,10 @@ export function DealerLocator({ initialPin }: DealerLocatorProps) {
 
   return (
     <div className="flex flex-col gap-10">
-      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-card ring-1 ring-slate-100 sm:p-8 lg:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-red-600">Dealer locator</p>
         <h2 className="mt-2 text-2xl font-bold leading-tight text-navy-900 sm:text-3xl">FIND YOUR NEAREST DEALER</h2>
-        <p className="mt-3 max-w-2xl text-slate-600">
+        <p className="mt-3 max-w-2xl leading-[1.5] text-slate-600">
           Enter your six-digit PIN code or share your location. We rank our dealers by driving distance and show the road route.
         </p>
 
@@ -70,7 +75,10 @@ export function DealerLocator({ initialPin }: DealerLocatorProps) {
               className={`${inputClass} pl-11`}
             />
           </div>
-          <SubmitButton>Search</SubmitButton>
+          <SubmitButton>
+            <Search className="h-4 w-4" aria-hidden="true" />
+            Find Dealers
+          </SubmitButton>
         </form>
 
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -78,7 +86,7 @@ export function DealerLocator({ initialPin }: DealerLocatorProps) {
             type="button"
             onClick={searchByCurrentLocation}
             disabled={isSearching}
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-navy-900 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-navy-900 px-5 py-2.5 text-sm font-semibold text-navy-900 transition duration-300 hover:-translate-y-0.5 hover:bg-navy-900 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
           >
             <Crosshair className="h-4 w-4" aria-hidden="true" />
             Use My Current Location
@@ -114,7 +122,7 @@ export function DealerLocator({ initialPin }: DealerLocatorProps) {
       </div>
 
       {readyState && selectedResult && (
-        <section className="flex flex-col gap-8">
+        <section className="result-pop flex flex-col gap-8">
           <div className="flex flex-col gap-1 text-sm text-slate-600">
             <p>
               Showing the {readyState.results.length} nearest dealers to {readyState.origin.label}, nearest first.
