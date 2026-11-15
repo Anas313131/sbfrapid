@@ -8,8 +8,9 @@
     "pincode": "110035",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.683015,
+    "longitude": 77.161628,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-002",
@@ -20,8 +21,9 @@
     "pincode": "110084",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.742337,
+    "longitude": 77.202315,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-003",
@@ -32,8 +34,9 @@
     "pincode": "110074",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.483749,
+    "longitude": 77.186652,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-004",
@@ -44,8 +47,9 @@
     "pincode": "110030",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.516034,
+    "longitude": 77.189254,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-005",
@@ -56,8 +60,9 @@
     "pincode": "110045",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.593401,
+    "longitude": 77.080123,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-006",
@@ -68,8 +73,9 @@
     "pincode": "122017",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.512407,
+    "longitude": 77.041656,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-007",
@@ -80,8 +86,9 @@
     "pincode": "110045",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.593401,
+    "longitude": 77.080123,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-008",
@@ -92,8 +99,9 @@
     "pincode": "110014",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.5829,
+    "longitude": 77.249354,
+    "geocodePrecision": "address"
   },
   {
     "id": "dealer-009",
@@ -104,8 +112,9 @@
     "pincode": "110091",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.60773,
+    "longitude": 77.29659,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-010",
@@ -116,8 +125,9 @@
     "pincode": "110059",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.619468,
+    "longitude": 77.053715,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-011",
@@ -128,8 +138,9 @@
     "pincode": "110034",
     "category": "A",
     "region": "Delhi",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.694471,
+    "longitude": 77.133591,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-012",
@@ -140,8 +151,9 @@
     "pincode": "122001",
     "category": "A++",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.467722,
+    "longitude": 77.03468,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-013",
@@ -152,8 +164,9 @@
     "pincode": "122001",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.467722,
+    "longitude": 77.03468,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-014",
@@ -164,8 +177,9 @@
     "pincode": "123302",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.300456,
+    "longitude": 76.307503,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-015",
@@ -176,8 +190,9 @@
     "pincode": "110028",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.617644,
+    "longitude": 77.15256,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-016",
@@ -188,8 +203,9 @@
     "pincode": "122103",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.300837,
+    "longitude": 77.122475,
+    "geocodePrecision": "address"
   },
   {
     "id": "dealer-017",
@@ -200,8 +216,9 @@
     "pincode": "122001",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.467722,
+    "longitude": 77.03468,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-018",
@@ -212,8 +229,9 @@
     "pincode": "122001",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.467722,
+    "longitude": 77.03468,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-019",
@@ -224,8 +242,9 @@
     "pincode": "122504",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.325914,
+    "longitude": 76.778702,
+    "geocodePrecision": "locality"
   },
   {
     "id": "dealer-020",
@@ -236,8 +255,9 @@
     "pincode": "122505",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.446768,
+    "longitude": 76.926858,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-021",
@@ -248,8 +268,9 @@
     "pincode": "122006",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.482992,
+    "longitude": 76.998183,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-022",
@@ -260,8 +281,9 @@
     "pincode": "122001",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.467722,
+    "longitude": 77.03468,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-023",
@@ -272,8 +294,9 @@
     "pincode": "122003",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.432131,
+    "longitude": 77.072496,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-024",
@@ -284,8 +307,9 @@
     "pincode": "122015",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.381603,
+    "longitude": 77.020491,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-025",
@@ -296,8 +320,9 @@
     "pincode": "122101",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.393122,
+    "longitude": 77.038586,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-026",
@@ -308,8 +333,9 @@
     "pincode": "122006",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.482992,
+    "longitude": 76.998183,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-027",
@@ -320,8 +346,9 @@
     "pincode": "122101",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.393122,
+    "longitude": 77.038586,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-028",
@@ -332,8 +359,9 @@
     "pincode": "122015",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.381603,
+    "longitude": 77.020491,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-029",
@@ -344,8 +372,9 @@
     "pincode": "122102",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.363394,
+    "longitude": 77.074994,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-030",
@@ -356,8 +385,9 @@
     "pincode": "122505",
     "category": "A+",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.446768,
+    "longitude": 76.926858,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-031",
@@ -368,8 +398,9 @@
     "pincode": "121004",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.344045,
+    "longitude": 77.326893,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-032",
@@ -380,8 +411,9 @@
     "pincode": "121001",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.395479,
+    "longitude": 77.3029,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-033",
@@ -392,8 +424,9 @@
     "pincode": "122105",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.256911,
+    "longitude": 76.932629,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-034",
@@ -404,8 +437,9 @@
     "pincode": "121004",
     "category": "A++",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.344045,
+    "longitude": 77.326893,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-035",
@@ -416,8 +450,9 @@
     "pincode": "122103",
     "category": "A++",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.201125,
+    "longitude": 77.06183,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-036",
@@ -428,8 +463,9 @@
     "pincode": "121102",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.142327,
+    "longitude": 77.330514,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-037",
@@ -440,8 +476,9 @@
     "pincode": "121005",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.365081,
+    "longitude": 77.295883,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-038",
@@ -452,8 +489,9 @@
     "pincode": "121102",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.142327,
+    "longitude": 77.330514,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-039",
@@ -464,8 +502,9 @@
     "pincode": "121106",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 27.889639,
+    "longitude": 77.379878,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-040",
@@ -476,8 +515,9 @@
     "pincode": "122107",
     "category": "A",
     "region": "GGN",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.069778,
+    "longitude": 77.026284,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-041",
@@ -488,8 +528,9 @@
     "pincode": "201009",
     "category": "A",
     "region": "Gaziabad",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.64599,
+    "longitude": 77.430818,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-042",
@@ -500,8 +541,9 @@
     "pincode": "201014",
     "category": "A",
     "region": "Gaziabad",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.640921,
+    "longitude": 77.367156,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-043",
@@ -512,8 +554,9 @@
     "pincode": "123401",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.155221,
+    "longitude": 76.679247,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-044",
@@ -524,8 +567,9 @@
     "pincode": "123401",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.155221,
+    "longitude": 76.679247,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-045",
@@ -536,8 +580,9 @@
     "pincode": "123401",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.155221,
+    "longitude": 76.679247,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-046",
@@ -548,8 +593,9 @@
     "pincode": "123110",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.19088,
+    "longitude": 76.617833,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-047",
@@ -560,8 +606,9 @@
     "pincode": "123501",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.087695,
+    "longitude": 76.571424,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-048",
@@ -572,8 +619,9 @@
     "pincode": "123101",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.188514,
+    "longitude": 76.502183,
+    "geocodePrecision": "locality"
   },
   {
     "id": "dealer-049",
@@ -585,7 +633,8 @@
     "category": null,
     "region": "Haryana",
     "latitude": null,
-    "longitude": null
+    "longitude": null,
+    "geocodePrecision": null
   },
   {
     "id": "dealer-050",
@@ -596,8 +645,9 @@
     "pincode": "123302",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.300456,
+    "longitude": 76.307503,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-051",
@@ -608,8 +658,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-052",
@@ -620,8 +671,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-053",
@@ -632,8 +684,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-054",
@@ -644,8 +697,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-055",
@@ -656,8 +710,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-056",
@@ -668,8 +723,9 @@
     "pincode": "132107",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.307845,
+    "longitude": 76.696842,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-057",
@@ -680,8 +736,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-058",
@@ -692,8 +749,9 @@
     "pincode": "132104",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.379938,
+    "longitude": 76.995398,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-059",
@@ -704,8 +762,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-060",
@@ -716,8 +775,9 @@
     "pincode": "132103",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.389421,
+    "longitude": 76.969023,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-061",
@@ -729,7 +789,8 @@
     "category": null,
     "region": "Haryana",
     "latitude": null,
-    "longitude": null
+    "longitude": null,
+    "geocodePrecision": null
   },
   {
     "id": "dealer-062",
@@ -741,7 +802,8 @@
     "category": null,
     "region": "Haryana",
     "latitude": null,
-    "longitude": null
+    "longitude": null,
+    "geocodePrecision": null
   },
   {
     "id": "dealer-063",
@@ -752,8 +814,9 @@
     "pincode": "131301",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.131603,
+    "longitude": 76.683942,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-064",
@@ -764,8 +827,9 @@
     "pincode": "125055",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.524695,
+    "longitude": 75.026487,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-065",
@@ -776,8 +840,9 @@
     "pincode": "126112",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.430396,
+    "longitude": 76.578862,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-066",
@@ -788,8 +853,9 @@
     "pincode": "125039",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.253778,
+    "longitude": 76.155786,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-067",
@@ -800,8 +866,9 @@
     "pincode": "125039",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.253778,
+    "longitude": 76.155786,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-068",
@@ -812,8 +879,9 @@
     "pincode": "125047",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.329365,
+    "longitude": 75.630986,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-069",
@@ -824,8 +892,9 @@
     "pincode": "127306",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.59552,
+    "longitude": 76.269912,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-070",
@@ -836,8 +905,9 @@
     "pincode": "126102",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.324514,
+    "longitude": 76.33514,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-071",
@@ -848,8 +918,9 @@
     "pincode": "125104",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.91406,
+    "longitude": 74.73623,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-072",
@@ -860,8 +931,9 @@
     "pincode": "124001",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.888749,
+    "longitude": 76.607724,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-073",
@@ -872,8 +944,9 @@
     "pincode": "125051",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.678017,
+    "longitude": 75.553667,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-074",
@@ -884,8 +957,9 @@
     "pincode": "124106",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.599689,
+    "longitude": 76.457233,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-075",
@@ -896,8 +970,9 @@
     "pincode": "127032",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.79317,
+    "longitude": 76.139128,
+    "geocodePrecision": "locality"
   },
   {
     "id": "dealer-076",
@@ -908,8 +983,9 @@
     "pincode": "125110",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.34967,
+    "longitude": 75.139633,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-077",
@@ -920,8 +996,9 @@
     "pincode": "136027",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.808307,
+    "longitude": 76.386443,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-078",
@@ -932,8 +1009,9 @@
     "pincode": "126102",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 29.324514,
+    "longitude": 76.33514,
+    "geocodePrecision": "pincode"
   },
   {
     "id": "dealer-079",
@@ -944,7 +1022,8 @@
     "pincode": "127021",
     "category": null,
     "region": "Haryana",
-    "latitude": null,
-    "longitude": null
+    "latitude": 28.79819,
+    "longitude": 76.147541,
+    "geocodePrecision": "pincode"
   }
 ]
